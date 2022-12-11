@@ -60,12 +60,12 @@
   }
   .tab{
     width: 99.5%;
-    height: 70px;
+    height: 65px;
     margin-top: 2px;
   }
   .tab button{
     width: 20%;
-    height: 70px;
+    height: 65px;
     margin-left: 4%;
     border-radius: 50%;
     border: 2px solid #FE3200;
