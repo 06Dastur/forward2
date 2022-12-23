@@ -83,6 +83,11 @@
     border: 2px solid #FAFE00;
     background-color: #FEDF00;
     margin-top: 4px;
+           
+  }
+  .circle{
+    
+    border-radius: 50%;
   }
   .slayd{
     width: 100%;
@@ -113,6 +118,17 @@
     width: 50%;
     margin-top: 0px;
     text-align: center;
+  }
+  .footer{
+    width: 100%;
+    height: 30px;
+    margin-top: 70vh;
+  }
+  .footer button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: aqua;
   }
 }
 
