@@ -6,35 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uc</title>
     <style>
-        .uc{
-            box-shadow: 2px 8px 15px 5px rgba(149, 2, 207, 0.953);
-        }
-        .uc h2{
+        .uc-prize{
+            width: 250px;
+            height: 260px;
+            margin: 10px 10px;
+            border: 2px solid rgb(68, 255, 0);
+            box-shadow: rgba(0, 0, 0, 0.45) 10px 30px 20px -10px;
             float: left;
-            margin-left: 8px;
+        }
+        .uc-image{
+            width: 99%;
+            height: 78%;
             margin-top: 0px;
-            
+            border-radius: 10px;
+            background-color: aquamarine;
+            border: 1px solid black;
         }
-        .uc button{
-            margin: 5px 30px;
-            margin-right: 0px;
-            height: 40px;
-            width: 23.5%;
-            border-radius: 20px;
+        .uc-image h1{
+            text-align: center;
+            font: 50px Cambria;
         }
-        .uc-price{
-            width: 50%;
+        .uc-image p{
+            text-align: center;
+            font: 35px optional;
         }
+        .uc-prize button{
+            width: 100%;
+            margin-top: 2.5px;
+            height: 50px;
+            border-radius: 25px;
+            background: green;
+            text-align: center;
+            color: #fff;
+        }
+        /* media screen */
         @media only screen and (max-width: 600px){
-            .uc-price{
-                width: 100%;
+            .uc-prize{
+                width: 46.5%;
+                height: 200px;
+                float: left;
+                margin: 5px 3px;
+                box-shadow: rgba(0, 0, 0, 0.45) 10px 30px 20px -10px;
             }
-            .uc{
-                /* border: 2px solid red; */
-                border-radius: 10px;
-                box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            .uc-image h1{
+                text-align: center;
+                font: 50px Cambria;
+                margin-top: 0px;
+            }
+            .uc-image p{
+                text-align: center;
+                font: 35px optional;
+                margin-top: 0px;
+            }
+            .uc-prize button{
+                width: 100%;
+                margin-top: 2.5px;
+                height: 35px;
+                border-radius: 25px;
+                background: green;
+                text-align: center;
+                color: #fff;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -43,37 +77,20 @@
         <button type="submit" style="width: 100%; height: 40px; background-color: green;
          border-radius: 20px; color: white;">Asosiy sahifa</button>
       </div></a>
-
-    <div class="content">
-        <h1 style="text-align: center;">UC narxlari</h1>
-    </div>
-    <div class="uc-price">
-        <div class="uc" style="width: 100%; height: 50px; background-color: rgb(203, 191, 191);">
-            <h2>60 UC</h2> <h2>12 000 som</h2>
-            <a href="http://t.me/forward_uc"><button type="submit" style="background-color: green;">UC Olish</button></a>
+      <hr>
+      <div class="uc-prize"> 
+        <div class="uc-image">
+            <h1>60 UC</h1>
+            <p>12 000uzs</p>
         </div>
-        <!-- <br>
-        <div class="uc" style="width: 100%; height: 50px; background-color: rgb(203, 191, 191);">
-            <h2>120 UC</h2> <h2>24 000 som</h2> 
-            <a href="http://t.me/forward_uc"><button type="submit" style="background-color: green;">UC Olish</button></a>
-        </div> -->
-        <!-- <br>
-        <div class="uc" style="width: 100%; height: 50px; background-color: rgb(203, 191, 191);">
-            <h2>240 UC</h2> <h2>40 000 som</h2> 
-            <a href="http://t.me/forward_uc"><button type="submit" style="background-color: green;">UC Olish</button></a>
-        </div> -->
-        <br>
-        <div class="uc" style="width: 100%; height: 50px; background-color: rgb(203, 191, 191);">
-            <h2>360 UC</h2> <h2>55 000 som</h2> 
-            <a href="http://t.me/forward_uc"><button type="submit" style="background-color: green;">UC Olish</button></a>
+        <button type="submit">UC OLISH</button>
+      </div>
+      <div class="uc-prize"> 
+        <div class="uc-image">
+            <h1>300 UC</h1>
+            <p>55 000uzs</p>
         </div>
-        <!-- <br>
-        <div class="uc" style="width: 100%; height: 50px; background-color: rgb(203, 191, 191);">
-            <h2>400 UC</h2> <h2>65 000 som</h2> 
-            <a href="http://t.me/forward_uc"><button type="submit" style="background-color: green;">UC Olish</button></a>
-        </div> -->
-        <br>
-
-    </div>
+        <button type="submit">UC OLISH</button>
+      </div>
 </body>
 </html>

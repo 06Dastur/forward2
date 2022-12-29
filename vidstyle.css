@@ -28,6 +28,7 @@ body {font-family: Arial;}
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #ccc;
+  background-color: aqua;
 }
 
 /* Style the tab content */
@@ -42,6 +43,12 @@ body {font-family: Arial;}
     display: block;
     margin-left: 10px;
 }
+.vid{
+  width: 450px;
+  height: 225px;
+  float: left;
+  
+}
 
 @media only screen and (max-width: 600px){
     .shrt iframe{
@@ -50,5 +57,9 @@ body {font-family: Arial;}
         margin-top: 5px;
         text-align: center;
         margin-left: -3px;
+    }
+    .tab button{
+      border-radius: 25px;
+      
     }
 }
