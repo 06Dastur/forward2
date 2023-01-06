@@ -112,7 +112,7 @@
       margin: 2px 0px;
   }
   .icon-bar i {
-      margin-top: -5px;
+      margin-top: 0px;
   }   
   .icon-bar a {
       border-radius: 50%;
@@ -121,13 +121,14 @@
       color: rgb(15, 32, 113);
       height: 63px;
       border: 2px solid #FFB833;
-      font: 30px bold Arial;
+      font: 20px bold Arial;
       background-color: #FFE033;
+      /* margin-top: px; */
   }
 
   .icon-bar p {
-      margin-top: -1px;
-      font: 14px bold Arial;
+      margin-top: 0px;
+      font: 10px bold Arial;
       
   }
 
