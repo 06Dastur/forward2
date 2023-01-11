@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="b.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon" onclick="openCity(event, 'Asosiy')">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Asosiy</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon" onclick="openCity(event, 'lobby')">
+                            <ion-icon name="gift-outline"></ion-icon>
+                        </span>
+                        <span class="text">Lobby</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon" onclick="openCity(event, 'video')">
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="text">video</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon" onclick="openCity(event, 'Aloqa)">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">aloqa</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon" onclick="openCity(event, 'uc')">
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </span>
+                        <span class="text">Uc</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+    <div id="Asosiy">
+        
+    </div>
+    <!-- start of script -->
+    <script>
+        let list = document.querySelectorAll('.list');
+        function activelink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active')
+        }
+        list.forEach((item) => item.addEventListener('click', activelink))
+    </script>
+</body>
+
+</html>

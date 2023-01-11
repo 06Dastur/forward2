@@ -50,4 +50,8 @@
     .container button{
         text-align: center;
     }
+    .tagiga{
+        width: 100%;
+        height: 40px;
+    }
 }
