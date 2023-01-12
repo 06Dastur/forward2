@@ -1,76 +1,119 @@
-.icon-bar {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  background: #222327;
+}
+.navigation{
+  position: relative;
   width: 100%;
-  height: 80px;
-  background-color: #555;
-  overflow: auto;
-  margin: 2px 0px;
-}
-
-.icon-bar a {
-  float: left;
-  width: 20%;
-  height: 100%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar i {
-  margin-top: -8px;
-}
-
-.icon-bar p {
-  margin-top: -4px;
-  font: 28px bold Arial;
-}
-
-.icon-bar a:hover {
-  background-color: #FEDB00;
-}
-.ford {
-  width: 100%;
-  height: 80px;
-}
-
-
-.tab button {
-  border: 3px solid #00fe0d;
-  border-radius:  1px;
-}
-
-.yangilik {
-  width: 200px;
-  height: 100px;
-  border: 2px solid rgb(0, 8, 255);
-  float: left;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
   border-radius: 10px;
-  margin-left: 10px;
-  background-color: #FEDB00;
-  color: black;
+  /* marginp: 0px auto; */
+  position: fixed;
 }
-.yangilik h1 {
+.ford{
   width: 100%;
-  text-align: center;
-  margin-top: 0px;
-  font: 30px bold Arial;
+  height: 60px;
+  margin-top: 70px;
 }
-
-.yangilik p {
-  width: 100%;
-  text-align: center;
-  margin-top: 0px;
-}
-
-
 .container{
-  /* border: 1px solid red; */
-  /* height: 600px; */
+  width: 100%;
+  height: 100vh   ;
+}
+.navigation ul{
+  position: relative;
+  display: flex;
+  width: 350px;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 75px;
+  transition: 0.5s;
+  color: rgb(255, 255, 255, 0.5);
+}
+.navigation ul li.active a .icon{
+  transform: translateY(-8px);
+  color: #29fd53;
+}
+.navigation ul li a .text{
+  position: absolute;
+  opacity: 0;
+  font-weight: 600;
+  font-size: 0.5rem;
+  color: #222327;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transform: translateY(0px);
+}
+.navigation ul li.active a .text{
+  transform: translateY(13px);
+  opacity: 1;
+}
+.indicator{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.indicator::before{
+  content: '';
+  position: absolute;
+  bottom: 13px;
+  width: 80%;
+  height: 14px;
+  background: #29fd53;
+  border-radius: 10px;
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator{
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator{
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator{
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator{
+  transform: translateX(calc(70px * 4));
 }
 .item img{
   width: 100%;
-  height: 100px;
+  height: 100%;
 }
 .slayd{
   /* border: 1px solid red; */
@@ -81,122 +124,152 @@
   height: 435px;
   border-radius: 15px;
 }
-/* media screen */
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: white;
+.tabcontent iframe{
+  margin-top: 70px;
+  width: 220vh;
+  height: 100vh;
+}
+@media only screen and (max-width: 600px){
+  .tablinks .active{
+      width: 100%;
+      height: 100%;
+  }
+  .menu{
+      position: fixed;
+      width: 100%;
   }
   .slayd{
-    width: 100%;
-    margin-top: 0px;
-    max-height: 250px;
-  }
-  .item img{
-    width: 100%;
-    height: 180px;
-  }
-  .carousel-inner{
-    width: 100%;
-    height: 180px;
-  }
-
-  .ford {
-    height: 50px;
-  }
-
-  .ford img {
-    width: 100%;
-    height: 50px;
-    /* border-radius: 10px; */
-  }
-
-
-  .carousel-inner img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .icon-bar {
       width: 100%;
-      max-height: 65px;
-      background-color: #555;
-      overflow: auto;
-      /* border: 1px solid red; */
-      margin: 2px 0px;
-  }
-  .icon-bar i {
       margin-top: 0px;
-  }   
-  .icon-bar a {
-      border-radius: 50%;
-      width: 17.5%;
-      margin-left: 2%;
-      color: rgb(15, 32, 113);
-      height: 63px;
-      border: 2px solid #FFB833;
-      font: 20px bold Arial;
-      background-color: #FFE033;
-      /* margin-top: px; */
+      max-height: 250px;
+    }
+    .item img{
+      width: 100%;
+      height: 180px;
+    }
+    .carousel-inner{
+      width: 100%;
+      height: 180px;
+    }
+    .tabcontent{
+      width: 100%;
+      he
+    }
+    .tabcontent iframe{
+      margin-top: 70px;
+      width: 100%;
+      height: 700px;
+    }
+  .ford{
+      margin-top: 70px;
+      width: 100%;
+      float: left;
   }
-
-  .icon-bar p {
-      margin-top: 0px;
-      font: 10px bold Arial;
+  .asosiy{
+      width: 100%;
+  }
+ 
+  .navigation{
+      margin: 2px;
+      width: 100%;
+  }
+  .navigation ul li{
+      width: 20%;
       
   }
+  .navigation ul li a{
+      /* font: 60px bold Arial; */
+  }
+  .indicator::before{
+      content: '';
+      position: absolute;
+      bottom: 13px;
+      width: 70%;
+      height: 14px;
+      background: #29fd53;
+      border-radius: 10px;
+  }
+  .indicator{
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+  }
+  .tabcontent{
+      
+  }
+  .navigation ul li:nth-child(2).active ~ .indicator{
+      transform: translateX(calc(100% * 1));
+  }
+  .navigation ul li:nth-child(3).active ~ .indicator{
+      transform: translateX(calc(100% * 2));
+  }
+  .navigation ul li:nth-child(4).active ~ .indicator{
+      transform: translateX(calc(100% * 3));
+  }
+  .navigation ul li:nth-child(5).active ~ .indicator{
+      transform: translateX(calc(100% * 4));
+  }
+}
+@media only screen and (max-width: 390px){
+  .slayd{
+      width: 100%;
+      margin-top: 0px;
+      max-height: 250px;
+    }
+    .item img{
+      width: 100%;
+      height: 180px;
+    }
+    .carousel-inner{
+      width: 100%;
+      height: 180px;
+    }
+  .menu{
+      position: fixed;
+      width: 100%;
+  }
+  .navigation{
+      margin: 2px;
+      width: 100%;
+  }
+  .navigation ul li{
+      width: 20%;
+      font: 20px bold Arial;
 
-  .footer {
-    width: 100%;
-    height: 30px;
-    margin-top: 70vh;
+  }
+  .indicator::before{
+      content: '';
+      position: absolute;
+      bottom: 13px;
+      width: 70%;
+      height: 14px;
+      background: #29fd53;
+      border-radius: 10px;
+  }
+  .indicator{
+      position: absolute;
+      width: 73px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
   }
 
-  .footer button {
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: aqua;
+  .navigation ul li:nth-child(2).active ~ .indicator{
+      transform: translateX(calc(93% * 1));
   }
-
-  .overflow_in {
-    width: 100%;
-    max-height: 122px;
-    overflow-x: auto;
-    display: flex;
-    /* overflow-x: hidden; */
-    overflow-y: auto;
-    margin-top: 5px 0px;
+  .navigation ul li:nth-child(3).active ~ .indicator{
+      transform: translateX(calc(93% * 2));
   }
-
-  .overflow_in::-webkit-scrollbar {
-    width: 0;
+  .navigation ul li:nth-child(4).active ~ .indicator{
+      transform: translateX(calc(93% * 3));
   }
-
-  .yangilik {
-    border: 2px solid rgb(0, 255, 42);
-    width: 187px;
-    height: 90px;
-    float: left;
-    margin-left: 4px;
-    border-radius: 10px;
-    margin-top: 5px;
-    background-color: #FEDB00;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    color: black;
-    /* overflow-y: scroll */
-  }
-
-  .yangilik h1 {
-    width: 100%;
-    text-align: center;
-    margin-top: 0px;
-    font: 30px bold Arial;
-  }
-
-  .yangilik p {
-    width: 100%;
-    text-align: center;
-    margin-top: 0px;
+  .navigation ul li:nth-child(5).active ~ .indicator{
+      transform: translateX(calc(93% * 4));
   }
 }

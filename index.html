@@ -1,137 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>FORWARD GAMING</title>
-    
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="b.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
- 
-    <div class="navbar-menu">
-        <div class="ford">
-            <img src="images/forward-navbar.jpg" alt="FORWARD GAME" width="100%" height="100%">
-        </div>
-        <div class="icon-bar">
-          <a href="#"><i class="fa fa-home"><p><b>Asosiy</b></p></i></a>
-          <a href="lobby.html"><i class="fa fa-gift"><p><b>Lobby</b></p></i></a>
-          <a href="video.html"><i class="fa fa-heart"><p><b>Video</b></p></i></a>
-          <a href="aloqa.html"><i class="fa fa-user"><p><b>Aloqa</b></p></i></a>
-          <a href="uc.html"><i class="fa fa-money"><p><b>UC</b></p></i></a>
-      </div>
-        
-            <div class="slayd">
-                <div class="container">
-                    <h2 style="text-align: center;">FORWARD PUBGM</h2>  
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators -->
-                      <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                        <li data-target="#myCarousel" data-slide-to="4"></li>
-                      </ol>
-                  
-                      <!-- Wrapper for slides -->
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="../images/pubg001.jpg" alt="Los Angeles">
-                        </div>
-                  
-                        <div class="item">
-                          <img src="../images/pubgboll.jpg" alt="Chicago">
-                        </div>
-                      
-                        <div class="item">
-                          <img src="../images/pubg01.jpg" alt="New york">
-                        </div>
-        
-                        <div class="item">
-                          <img src="../images/season.jpg" alt="New york">
-                        </div>
-        
-                        <div class="item">
-                          <img src="../images/pubgm.jpg" alt="New york">
-                        </div>
-        
-        
-                      </div>
-                  
-                      <!-- Left and right controls -->
-                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="text" style="margin-top: 20px;">
-                <!-- <h1>Tez kunda uc lobby</h1> -->
-
-            </div>
-           <!-- <a href="login.html">
-            <div class="yangilik">
-              <div class="login">
-                <h1>LOGIN</h1>
-                <p>royhat panelga qaytish</p>
-              </div>
-            </div>
-           </a> -->
-
-           <div class="overflow_in">
-            
-                <a href="login.html">
-                  <div class="yangilik">
-                      <h1>Vizov chek</h1>
-                      <p>Vizovni chekni olish</p>
-                  </div>
-                </a>
-                
-                <a href="lucky_spin.html">
-                  <div class="yangilik">
-                    <h1>UC BONUS</h1>
-                    <p>UC BONUS OLISH</p>
-                  </div>
-                </a>
-      
-                <a href="new_year.html">
-                  <div class="yangilik">
-                    <h1>NEW YEAR</h1>
-                    <p>Yangi yil animatsiyasi</p>
-                  </div>
-                </a>
-      
-                <a href="rocket.html">
-                  <div class="yangilik">
-                    <h1>PLANE</h1>
-                    <p>Samalyot animatsiyasi</p>
-                  </div>
-                </a>
-                <a href="chornavoy/boshqa.html">
-                  <div class="yangilik">
-                    <h1>PLANEn</h1>
-                    <p>Samalyot animatsiyasi</p>
-                  </div>
-                </a>
     
-           </div>
+    <div class="menu">
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#" class="tablinks active" onclick="openCity(event, 'Asosiy')">
+                        <span class="icon" >
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Asosiy</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" class="tablinks" onclick="openCity(event, 'lobby')">
+                        <span class="icon" >
+                            <ion-icon name="gift-outline"></ion-icon>
+                        </span>
+                        <span class="text">Lobby</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" class="tablinks" onclick="openCity(event, 'video')">
+                        <span class="icon" >
+                            <ion-icon name="videocam-outline"></ion-icon>
+                        </span>
+                        <span class="text">video</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" class="tablinks" onclick="openCity(event, 'biz')">
+                        <span class="icon" >
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">aloqa</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" class="tablinks" onclick="openCity(event, 'uc')">
+                        <span class="icon" >
+                            <ion-icon name="cash-outline"></ion-icon>
+                        </span>
+                        <span class="text">Uc</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </div>
+    <div id="Asosiy" class="tabcontent">
+        <iframe src="asosiy.html" frameborder="0"></iframe>
+    </div>
+    <br>
+    <div id="lobby" class="tabcontent">
+        <iframe src="lobby.html" frameborder="0"></iframe>
+    </div>
+    <br>
+    <div id="video" class="tabcontent">
+        <iframe src="video.html" frameborder="0"></iframe>
+    </div>
+    <br>
+    <div id="biz" class="tabcontent">
+        <iframe src="aloqa.html" frameborder="0"></iframe>
+    </div>
+    <br>
+    <div id="uc" class="tabcontent">
+        <iframe src="uc.html" frameborder="0"></iframe>
+    </div>
+
+    <!-- start of script -->
+    <script>
+        let list = document.querySelectorAll('.list');
+        function activelink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active')
+        }
+        list.forEach((item) => item.addEventListener('click', activelink));
 
 
-            <!-- <script>
-            function openCity(evt, cityName) {
+        function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -143,9 +108,8 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
-            }
-            </script> -->
-    </div>
-
+        }
+    </script>
 </body>
+
 </html>
