@@ -231,8 +231,8 @@
       max-height: 250px;
     }
     .menu ion-icon{
-      margin: 8px 0px;
-      font-size: 20px;
+      margin: 10px 0px;
+      font-size: 17px;
     }
     .item img {
       width: 100%;
@@ -271,7 +271,7 @@
   }
   .menu p{
       margin-top: -10px;
-      font: 13px Lucida Georgia;
+      font: 10px Lucida Georgia;
       /* text-transform: uppercase; */
   }
   .overflow_in {
