@@ -223,6 +223,9 @@
   text-align: center;
   margin-top: 0px;
 }
+.green{
+  background: rgb(3, 15, 247);
+}
 
 @media only screen and (max-width: 600px){
   .slayd {
@@ -314,5 +317,13 @@
       width: 100%;
       text-align: center;
       margin-top: 0px;
+    }
+    .green{
+      background: rgb(3, 247, 215);
+      height: 100%;
+    }
+    .green h1{
+      font-size: 27px;
+      text-align: center;
     }
 }
