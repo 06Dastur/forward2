@@ -3,7 +3,8 @@
     height: 250px;
     border: 1px solid #4dff00;
     float: left;
-    margin: 15px 35px;
+    margin-left: 65px;
+    margin-top: 15px;
 }
 .content img{
     width: 100%;

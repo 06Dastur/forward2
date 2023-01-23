@@ -50,9 +50,11 @@
   border: 2px solid rgb(0, 8, 255);
   float: left;
   border-radius: 10px;
-  margin-left: 10px;
+  margin: 5px 5px;
   background-color: #FEDB00;
   color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .yangilik h1 {
@@ -67,7 +69,6 @@
   text-align: center;
   margin-top: 0px;
 }
-
 @media only screen and (max-width: 600px){
   .slayd {
       width: 100%;
@@ -177,6 +178,9 @@
   background: rgb(190, 190, 176);
   text-decoration: none;
   color: black;
+}
+.menu a:hover{
+  text-decoration: none;
 }
 .menu ion-icon{
   margin: 8px 0px;
