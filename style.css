@@ -1,18 +1,21 @@
-.ford{
+.ford {
   width: 100%;
   height: 70px;
 }
-.ford img{
+
+.ford img {
   width: 100%;
   height: 100%;
 }
-.menu{
+
+.menu {
   width: 100%;
   height: 80px;
   background: rgb(190, 190, 176);
   /* border: 1px solid red; */
 }
-.menu a{
+
+.menu a {
   width: 20%;
   height: 100%;
   float: left;
@@ -22,28 +25,33 @@
   text-decoration: none;
   color: black;
 }
-.menu ion-icon{
+
+.menu ion-icon {
   margin: 8px 0px;
   font-size: 25px;
 }
-.menu p{
+
+.menu p {
   margin-top: 0px;
 }
+
 .slayd {
   /* border: 1px solid red; */
   width: 100%;
   height: 600px;
 }
 
-.carousel-inner{
+.carousel-inner {
   width: 100%;
   height: 500px;
   border-radius: 15px;
 }
-.carousel-inner img{
+
+.carousel-inner img {
   width: 100%;
   height: 100%;
 }
+
 .yangilik {
   width: 200px;
   height: 100px;
@@ -69,266 +77,247 @@
   text-align: center;
   margin-top: 0px;
 }
-@media only screen and (max-width: 600px){
-  .slayd {
-      width: 100%;
-      margin-top: 0px;
-      max-height: 250px;
-    }
-  
-    .item img {
-      width: 100%;
-      height: 180px;
-    }
-  
-    .carousel-inner {
-      width: 100%;
-      height: 180px;
-    }
-  .ford{
-      width: 100%;
-      height: 40px;
-  }
-  .menu{
-      width: 100%;
-      height: 65px;
-      /* border: 1px solid red; */
-  }
-  .menu a{
-      width: 17.5%;
-      margin-left: 2%;
-      border-radius: 50%;
-      height: 95%;
-      margin-top: 10px;
-      float: left;
-      margin-top: 0px;
-      text-align: center;
-      background: rgb(254, 241, 3);
-      border: 2px solid rgb(251, 107, 5);
-      text-decoration: none;
-      color: black;
-  }
-  .menu a:hover{
-      text-decoration: none;
-  }
-  .menu p{
-      margin-top: -13px;
-  }
-  .overflow_in {
-      width: 100%;
-      max-height: 122px;
-      overflow-x: auto;
-      display: flex;
-      /* overflow-x: hidden; */
-      overflow-y: auto;
-      margin-top: 5px 0px;
-    }
-  
-    .overflow_in::-webkit-scrollbar {
-      width: 0;
-    }
-  
-    .yangilik {
-      border: 2px solid rgb(0, 255, 42);
-      width: 187px;
-      height: 90px;
-      float: left;
-      margin-left: 4px;
-      border-radius: 10px;
-      margin-top: 5px;
-      background-color: #FEDB00;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      color: black;
-      /* overflow-y: scroll */
-    }
-  
-    .yangilik h1 {
-      width: 100%;
-      text-align: center;
-      margin-top: 0px;
-      font: 30px bold Arial;
-    }
-  
-    .yangilik p {
-      width: 100%;
-      text-align: center;
-      margin-top: 0px;
-    }
-}.ford{
+
+.overflow_in {
   width: 100%;
-  height: 70px;
-}
-.ford img{
-  width: 100%;
-  height: 100%;
-}
-.menu{
-  width: 100%;
-  height: 80px;
-  background: rgb(190, 190, 176);
+  max-height: 125px;
+  overflow-x: auto;
+  display: flex;
+  /* overflow-x: hidden; */
+  overflow-y: auto;
+  margin-top: 5px 0px;
   /* border: 1px solid red; */
 }
-.menu a{
-  width: 20%;
-  height: 100%;
-  float: left;
-  margin-top: 0px;
-  text-align: center;
-  background: rgb(190, 190, 176);
-  text-decoration: none;
-  color: black;
-}
-.menu a:hover{
-  text-decoration: none;
-}
-.menu ion-icon{
-  margin: 8px 0px;
-  font-size: 25px;
-}
-.menu p{
-  margin-top: 0px;
-}
-.slayd {
-  /* border: 1px solid red; */
-  width: 100%;
-  height: 600px;
+
+.overflow_in::-webkit-scrollbar {
+  /* width: 0; */
 }
 
-.carousel-inner{
-  width: 100%;
-  height: 500px;
-  border-radius: 15px;
-}
-.carousel-inner img{
-  width: 100%;
-  height: 100%;
-}
-.yangilik {
-  width: 200px;
-  height: 100px;
-  border: 2px solid rgb(0, 8, 255);
-  float: left;
-  border-radius: 10px;
-  margin-left: 10px;
-  background-color: #FEDB00;
-  color: black;
-}
-
-.yangilik h1 {
-  width: 100%;
-  text-align: center;
-  margin-top: 0px;
-  font: 30px bold Arial;
-}
-
-.yangilik p {
-  width: 100%;
-  text-align: center;
-  margin-top: 0px;
-}
-.green{
+.green {
   background: rgb(3, 15, 247);
   height: 100%;
 }
+.next-tip{
+  width: 335px;
+  height: 180px;
+  border: 1px solid red;
+  margin: 20px 20px;
+  border-radius: 10px;
+  float: left;
+}
+.next-tip img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
   .slayd {
-      width: 100%;
-      margin-top: 0px;
-      max-height: 250px;
-    }
-    .menu ion-icon{
-      margin: 10px 0px;
-      font-size: 17px;
-    }
-    .item img {
-      width: 100%;
-      height: 180px;
-    }
-  
-    .carousel-inner {
-      width: 100%;
-      height: 180px;
-    }
-  .ford{
-      width: 100%;
-      height: 45px;
+    width: 100%;
+    margin-top: 0px;
+    max-height: 250px;
   }
-  .menu{
-      width: 100%;
-      height: 65px;
-      /* border: 1px solid red; */
+  .next-tip{
+    width: 90%;
+    margin: 10px 5%;
   }
-  .menu a{
-      width: 17.5%;
-      margin-left: 2%;
-      border-radius: 50%;
-      height: 95%;
-      margin-top: 2px;
-      float: left;
-      text-align: center;
-      background: rgb(254, 241, 3);
-      border: 2px solid rgb(251, 189, 5);
-      text-decoration: none;
-      color: black;
-      
+  .item img {
+    width: 100%;
+    height: 180px;
   }
-  .menu a:hover{
-      text-decoration: none;
+
+  .carousel-inner {
+    width: 100%;
+    height: 180px;
   }
-  .menu p{
-      margin-top: -10px;
-      font: 10px Lucida Georgia;
-      /* text-transform: uppercase; */
+
+  .ford {
+    width: 100%;
+    height: 40px;
   }
+
+  .menu {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid red; */
+  }
+
+  .menu a {
+    width: 17.5%;
+    margin-left: 2%;
+    border-radius: 50%;
+    height: 95%;
+    margin-top: 10px;
+    float: left;
+    margin-top: 0px;
+    text-align: center;
+    background: rgb(254, 241, 3);
+    border: 2px solid rgb(251, 107, 5);
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu a:hover {
+    text-decoration: none;
+  }
+
+  .menu p {
+    margin-top: -13px;
+  }
+
   .overflow_in {
-      width: 100%;
-      max-height: 122px;
-      overflow-x: auto;
-      display: flex;
-      /* overflow-x: hidden; */
-      overflow-y: auto;
-      margin-top: 5px 0px;
-    }
-  
-    .overflow_in::-webkit-scrollbar {
-      width: 0;
-    }
-  
-    .yangilik {
-      border: 2px solid rgb(0, 255, 42);
-      width: 187px;
-      height: 90px;
-      float: left;
-      margin-left: 4px;
-      border-radius: 10px;
-      margin-top: 5px;
-      background-color: #FEDB00;
-      overflow-x: hidden;
-      overflow-y: hidden;
-      color: black;
-      /* overflow-y: scroll */
-    }
-  
-    .yangilik h1 {
-      width: 100%;
-      text-align: center;
-      margin-top: 0px;
-      font: 30px bold Arial;
-    }
-  
-    .yangilik p {
-      width: 100%;
-      text-align: center;
-      margin-top: 0px;
-    }
-    .green{
-      background: rgb(3, 247, 215);
-      height: 100%;
-    }
-    .green h1{
-      font-size: 27px;
-      text-align: center;
-    }
+    width: 100%;
+    max-height: 200px;
+    overflow-x: auto;
+    display: flex;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    margin-top: 5px 0px;
+  }
+
+  .overflow_in::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .yangilik {
+    border: 2px solid rgb(0, 255, 42);
+    width: 250px;
+    height: 180px;
+    float: left;
+    margin-left: 4px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #FEDB00;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: black;
+    /* overflow-y: scroll */
+  }
+
+  .yangilik h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    font: 30px bold Arial;
+  }
+
+  .yangilik p {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .slayd {
+    width: 100%;
+    margin-top: 0px;
+    max-height: 250px;
+  }
+
+  .menu ion-icon {
+    margin: 10px 0px;
+    font-size: 17px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: 180px;
+  }
+
+  .ford {
+    width: 100%;
+    height: 45px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid red; */
+  }
+
+  .menu a {
+    width: 17.5%;
+    margin-left: 2%;
+    border-radius: 50%;
+    height: 95%;
+    margin-top: 2px;
+    float: left;
+    text-align: center;
+    background: rgb(254, 241, 3);
+    border: 2px solid rgb(251, 189, 5);
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .menu a:hover {
+    text-decoration: none;
+  }
+
+  .menu p {
+    margin-top: -10px;
+    font: 10px Lucida Georgia;
+    /* text-transform: uppercase; */
+  }
+
+  .overflow_in {
+    width: 100%;
+    max-height: 122px;
+    overflow-x: auto;
+    display: flex;
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    margin-top: 5px 0px;
+  }
+
+  .overflow_in::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .yangilik {
+    border: 2px solid rgb(0, 255, 42);
+    width: 187px;
+    height: 90px;
+    float: left;
+    margin-left: 4px;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #FEDB00;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: black;
+    /* overflow-y: scroll */
+  }
+
+  .yangilik h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    font: 30px bold Arial;
+  }
+
+  .yangilik p {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  .green {
+    background: rgb(3, 247, 215);
+    height: 100%;
+  }
+
+  .green h1 {
+    font-size: 27px;
+    text-align: center;
+  }
 }
