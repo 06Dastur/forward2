@@ -99,18 +99,29 @@
 }
 .next-tip{
   width: 335px;
-  height: 180px;
+  height: 220px;
   border: 1px solid red;
   margin: 20px 20px;
   border-radius: 10px;
   float: left;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .next-tip img{
   width: 100%;
-  height: 100%;
+  height: 80%;
+  top: 0;
   border-radius: 10px;
 }
-
+.next-tip button{
+  width: 50%;
+  height: 35px;
+  margin: 1% 25%;
+  background: orangered;
+  color: #fff;
+  border: 0px;
+  border-radius: 10px;
+  /* align-items: center; */
+}
 
 @media only screen and (max-width: 600px) {
   .slayd {
@@ -121,6 +132,9 @@
   .next-tip{
     width: 90%;
     margin: 10px 5%;
+  }
+  .next-btn{
+
   }
   .item img {
     width: 100%;
